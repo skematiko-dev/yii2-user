@@ -371,7 +371,7 @@ class AdminController extends Controller
      */
     public function actionAssignments($id)
     {
-        if (!isset(\Yii::$app->extensions['dektrium/yii2-rbac'])) {
+        if (!isset(\Yii::$app->extensions['skematiko-dev/yii2-rbac'])) {
             throw new NotFoundHttpException();
         }
         Url::remember('', 'actions-redirect');
